@@ -9,7 +9,7 @@ import { Container,
     Images
     } from './LoginElements'
 
-    import myImg from '../../images/Imagen.PNG';
+    import myImg from '../../images/imagenLogin.jpg';
 
 
 

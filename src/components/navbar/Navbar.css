@@ -1,0 +1,14 @@
+#tittle {
+  color: white;
+}
+
+section {
+  content: "";
+  display: flex;
+  max-height: 200px;
+  min-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+  justify-content: space-between;
+}

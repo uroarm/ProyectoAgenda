@@ -7,7 +7,7 @@ export const Container = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    background: #d06d46;
+    background: linear-gradient(to bottom, #8ED1FC , #ffd1c0);
     display: flex;
     flex-direction: row;
     justify-content: center;

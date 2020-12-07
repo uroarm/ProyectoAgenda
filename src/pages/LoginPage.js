@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import LoginForm from '../components/login/LoginForm';
 import  Calendar from '../components/calendar/Calendar';
+import AddEventPage from './AddEventPage';
 
 function LoginPage() {
 
@@ -35,11 +36,8 @@ function LoginPage() {
     return (
         <div>
              { (user.email != "") ? (
-                /*<div className = "Welcome">
-                    <h2>Welcome</h2>
-                    <button>Logout</button>
-                </div>*/
-                <Calendar></Calendar>
+                /*<Calendar></Calendar>*/
+                <AddEventPage />
             ) : 
             (
             <LoginForm Login={Login} error={error} />
