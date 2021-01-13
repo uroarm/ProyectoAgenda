@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import LoginForm from '../components/login/LoginForm';
-import  Calendar from '../components/calendar/Calendar';
-import AddEventPage from './AddEventPage';
+import ActualEventPage from './ActualEventPage';
 
 function LoginPage() {
 
@@ -36,8 +35,7 @@ function LoginPage() {
     return (
         <div>
              { (user.email != "") ? (
-                /*<Calendar></Calendar>*/
-                <AddEventPage />
+                <ActualEventPage/>
             ) : 
             (
             <LoginForm Login={Login} error={error} />

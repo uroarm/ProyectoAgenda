@@ -1,0 +1,21 @@
+.ActualEventPage {
+    background: linear-gradient(to bottom, #b06af1, #fdd8fa);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  #button {
+    line-height: 60%;
+    
+  }
+  #info {
+    justify-content: center;
+  }
+  
