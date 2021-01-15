@@ -1,0 +1,61 @@
+#card {
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5px;
+    
+  }
+
+  h2 {
+   /* background-color: aqua;*/
+    color: #ff3a4e;
+  }
+
+  h3{
+   /* background-color: blue;*/
+    text-align: left;
+    width: 100%;
+  }
+  
+  .icons {
+    color: #ff3a4e;
+    size: 2em;
+    height: 35px;
+  }
+  
+  .miniIcons{
+    width: 50%;
+    padding-top: 7px;
+    color: #ff3a4e;
+    size: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .divs {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    
+  }
+
+  .texts{
+      text-align: left;
+      color: #ff3a4e;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      /*background-color: aqua;   */
+  }
+  
+  .container{
+    margin-top: 12px;
+    background-color: white;
+    border: none;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding-left: 15px;
+  }
+  
+  
+  
+ 

@@ -31,8 +31,6 @@ function Cards (){
                         <h2>Time</h2>
                     </div>
                     <TextField select label="    8:00 a.m" color="secondary" helperText="Please select start hour" variant="outlined"/>
-          
-                    
                     
                     <div className="divs">
                         <FiBell className="icons" size="2em"/>
