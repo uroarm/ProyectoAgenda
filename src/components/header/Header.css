@@ -1,0 +1,41 @@
+.header {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+
+.header .leftside {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.header .leftside .logo {
+  max-height: 80px;
+}
+
+.header .leftside .logo a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.header .rightside {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8%;
+}
+
+.header .rightside .login {
+  max-height: 80px;
+}
+
+.header .rightside .login a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
