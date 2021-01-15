@@ -2,7 +2,7 @@ import React from 'react' ;
 import {FiChevronLeft,FiCalendar} from 'react-icons/fi';
 import {IconButton} from '@material-ui/core';
 import './Navbar.css';
-import ActualEventPage from '../../pages/ActualEventPage';
+
 import { Link } from 'react-router-dom';
 
 function Navbar (){

@@ -10,6 +10,8 @@ h2 {
 .icons {
   color: #ff3a4e;
   size: 2em;
+  padding-top: 17px;
+  align-self: flex-start;
 }
 
 .divs {
@@ -17,7 +19,8 @@ h2 {
   align-items: center;
 }
 
-
-#button {
+.texts{
 
 }
+
+
