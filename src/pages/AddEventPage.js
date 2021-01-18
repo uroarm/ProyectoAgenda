@@ -6,7 +6,7 @@ import Navbar from '../components/navbar/Navbar';
 function AddEventPage() {
     return (
         <div className="AddEventPage">
-      <div className="header">
+      <div className="navbar">
       <Navbar/>
       </div>   
       <Cards />   

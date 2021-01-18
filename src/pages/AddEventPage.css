@@ -1,21 +1,19 @@
 .AddEventPage {
-    background: linear-gradient(to bottom, #ff3a4e, #ffd1c0);
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header {
-    display: flex;
-    text-align: center;
-    padding-top: 10px;
-  }
-  
-  #button {
-    line-height: 60%;
-    
-  }
-  #info {
-    justify-content: center;
-  }
-  
+  background: linear-gradient(to bottom, #ff3a4e, #ffd1c0);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#button {
+  line-height: 60%;
+}
+#info {
+  justify-content: center;
+}
