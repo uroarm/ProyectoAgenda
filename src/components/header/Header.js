@@ -7,10 +7,10 @@ function Header (){
         <div className="header">
             <div className="leftside">
                 <div className="logo">
-                <Link to="/landing">
+                    <Link to="/landing">
                         <a>Time-App</a>
-                </Link>
-                </div>
+                    </Link>
+                </div> 
             </div>
             <div className= "rightside">
                 <div className="login">
@@ -21,7 +21,6 @@ function Header (){
             </div>
         </div>
     )
-
 }
 
 export default Header;

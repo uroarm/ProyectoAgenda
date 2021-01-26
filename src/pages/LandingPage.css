@@ -22,6 +22,10 @@
   color: white;
 }
 
+.custom-shape-divider-2 {
+  fill: #00bfff;
+}
+
 .custom-shape-divider svg {
   width: calc(100% + 1.3px);
   height: 124px;
@@ -59,7 +63,24 @@
   margin-top: 0;
   color: black;
 }
+
 .boton {
-  border-color: #00bfff;
-  background-color: #00bfff;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 25px rgba(0, 191, 255, 0.5);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
 }
