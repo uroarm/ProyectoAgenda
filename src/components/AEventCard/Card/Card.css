@@ -18,9 +18,10 @@
   }
   
   .icons {
-    color: #ff3a4e;
+    color: #ff3a85;
     size: 2em;
     height: 35px;
+    
   }
   
   .miniIcons{
@@ -41,7 +42,9 @@
 
   .texts{
       text-align: left;
-      color: #ff3a4e;
+      background: linear-gradient(to bottom right, #ff3a4e,#954ae7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-family: "Comic Sans MS", cursive, sans-serif;
       /*background-color: aqua;   */
   }
@@ -52,7 +55,7 @@
     border: none;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    height: 670px;
     padding-left: 15px;
   }
   
