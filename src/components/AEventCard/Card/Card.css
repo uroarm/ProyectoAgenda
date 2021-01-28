@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Patrick+Hand&display=swap');
 #card {
     max-width: 100%;
     margin-left: 15%;
@@ -6,9 +7,14 @@
     
   }
 
+  .grids{
+    
+  }
+
   h2 {
    /* background-color: aqua;*/
     color: #ff3a4e;
+    font-family: 'Patrick Hand', cursive;
   }
 
   h3{
@@ -23,11 +29,12 @@
     height: 35px;
     
   }
-  
+   .color{
+    color: #ff3a4e;
+   }
   .miniIcons{
     width: 50%;
     padding-top: 7px;
-    color: #ff3a4e;
     size: 1em;
     display: flex;
     justify-content: space-between;
@@ -45,18 +52,29 @@
       background: linear-gradient(to bottom right, #ff3a4e,#954ae7);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-size: 17px;
+      font-family: 'Patrick Hand', cursive;
       /*background-color: aqua;   */
   }
   
   .container{
-    margin-top: 12px;
-    background-color: white;
-    border: none;
+ 
+    
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 550px;
+    height: 650px;
+    
+    z-index: 1;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: column;
-    align-items: center;
-    height: 670px;
-    padding-left: 15px;
+    padding: 40px 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   
