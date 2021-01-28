@@ -16,7 +16,12 @@ import { Link } from 'react-router-dom';
 import validateInfo from './validateInfo'
 import useForm from './useForm';
 
-const SignUp = () => {
+const SignUp = ({submitForm}) => {
+
+  const {handleChange, values, handleSubmit, errors} 
+  = useForm(submitForm,validateInfo);
+
+  
    
     const ColorButton = withStyles((theme) => ({
         root: {
@@ -28,14 +33,13 @@ const SignUp = () => {
         },
       }))(Button);
 
-      const {handleChange, values, handleSubmit, errors} = useForm(validateInfo);
-
+      
     return (
         <>
 
           <Container>
               <FormContent>
-                  <Form >
+                  <Form onSubmit={handleSubmit}>
                   <FormTitle>Register</FormTitle>
                       <FormLabel>Name</FormLabel>
 
@@ -49,19 +53,26 @@ const SignUp = () => {
                       <FormLabel>Email</FormLabel>
                       <TextField label="Email" variant="outlined" color="#9900ef" fullWidth
                       type="email" id="email" name="email"
-                      placeHolder="email" />
-
+                      placeHolder="email" 
+                      value={values.email}
+                      onChange={handleChange}/>
+                        {errors.email && <p>{errors.email}</p>}
                       <FormLabel>Password</FormLabel>
 
                       <TextField label="Password" variant="outlined" color="#9900ef" fullWidth 
                       type="password" id="password" name="password"
-                      placeHolder="password" />
-                      
+                      placeHolder="password" 
+                      value={values.password}
+                      onChange={handleChange}/>
+                      {errors.password && <p>{errors.password}</p>}
                       <FormLabel>Confirm Password</FormLabel> 
 
                       <TextField label="Confirm Password" variant="outlined" color="#9900ef" fullWidth
                       type="password" id="password2" name="password2"
-                      placeHolder="confirm password" />
+                      placeHolder="confirm password" 
+                      value={values.password2}
+                      onChange={handleChange}/>
+                      {errors.password2 && <p>{errors.password2}</p>}
                         <br></br>
                         <ColorButton type='submit' >Sign Up</ColorButton>
                         <br></br>

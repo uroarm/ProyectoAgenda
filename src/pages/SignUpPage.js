@@ -1,17 +1,18 @@
 import React, {useState} from 'react'
 import SignUp from '../components/login/SignUp'
-
+import LoginPage from './LoginPage'
 function SignUpPage() {
 
-    const [isSubmit, setIsSubmit] = useState(false)
+    const [isSubmitted, setIsSubmitted] = useState(false)
 
     function submitForm(){
-        setIsSubmit(true);
+        setIsSubmitted(true);
     }
    
     return (
         <div>
-            <SignUp/>         
+            {!isSubmitted ? <SignUp submitForm=
+            {submitForm} /> : (<LoginPage/>)}       
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Card from '@material-ui/core/card'
 import CardContent from '@material-ui/core/CardContent';
 import {IconButton, makeStyles} from '@material-ui/core'
@@ -26,9 +26,12 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 function Cards (){
+
     
     const classes = useStyles();
+    const [value, setValue] = useState('');
 
+    
     return (
 
             <Card id="card">
@@ -54,7 +57,7 @@ function Cards (){
                         <FiCommand className="icons" size="2em"/>
                         <h2>Task</h2>
                     </div>
-                    <TextField label="Task" variant="outlined" color="secondary" fullWidth/>
+                    <TextField label="Task" variant="outlined" color="secondary" fullWidth />
 
                     <div className="divs">
                         <FiEdit className="icons" size="2em"/>
@@ -86,9 +89,9 @@ function Cards (){
                     </div>
                     <Switch inputProps={{ 'aria-label': 'primary checkbox' }  } />
 
-                    <Link to="/actualEvent">
+                    <Link >
                     <br></br>                   
-                        <IconButton>                           
+                        <IconButton to='/ActualEvent'>                           
                             <FiPlusCircle size = "50px" color="red"/>               
                         </IconButton>               
                 </Link>   
