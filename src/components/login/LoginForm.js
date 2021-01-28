@@ -8,10 +8,13 @@ import { Container,
     FormTitle,
     Images
     } from './LoginElements'
-
+    import { green, purple } from '@material-ui/core/colors';
     import myImg from '../../images/imagenLogin.PNG';
-
-
+    import TextField from '@material-ui/core/TextField';
+    import {Link} from 'react-router-dom';
+    import Button from '@material-ui/core/Button';
+    import {  withStyles  } from '@material-ui/core/styles';    
+    
 
 function LoginForm({Login, error})  {
 
@@ -22,26 +25,37 @@ function LoginForm({Login, error})  {
         Login(details);
     }
 
+    const ColorButton = withStyles((theme) => ({
+        root: {
+          color: theme.palette.getContrastText(purple[500]),
+          backgroundColor: purple[400],
+          '&:hover': {
+            backgroundColor: purple[600],
+          },
+        },
+      }))(Button);
+
     return (
         <div>
            
             <Container>
-                    <Images src= {myImg}/> 
+                    
                     <FormContent>
                         <Form onSubmit={submitHandler}>
-                            <FormTitle>Iniciar Sesion</FormTitle>
+                            <FormTitle>Login</FormTitle>
                             {(error != "") ? (<div>datos incorretos!!</div>) : ""}
-                            <FormLabel htmlFor='for'>Correo</FormLabel>
-
-                            <FormInput  placeholder='ingresa correo' type="email" id="email" 
+                            <FormLabel>Email</FormLabel>
+                            <TextField label="Email" variant="outlined" color="primary" fullWidth
+                            placeholder='ingresa correo' type="email" id="email" 
                             onChange={e => setDetails({...details, email: e.target.value})} value={details.email}/>
-
-                            <FormLabel htmlFor='for'>Contraseña</FormLabel>
-
-                            <FormInput placeholder="ingresa contraseña"  type="password" id = "password"
+                             <FormLabel>Password</FormLabel>
+                            <TextField label="password" variant="outlined" color="#primary" fullWidth
+                            placeholder="ingresa contraseña"  type="password" id = "password"
                             onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
-
-                            <FormButton type='submit'>aceptar</FormButton>
+                            <br></br>
+                            <ColorButton type="submit" color="primary" variant="contained" fullWidth> Login</ColorButton>
+                            <br></br>
+                            <div>Don't have an account? <Link to="/SignUp">Sing up</Link></div>
                         </Form>
                     </FormContent>
                 

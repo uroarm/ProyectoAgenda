@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ContainerNav = styled.div`
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
     color: white;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 1em;
     display: flex;
     flex-direction: column;

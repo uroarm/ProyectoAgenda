@@ -1,8 +1,10 @@
 .ActualEventPage {
-  background: linear-gradient(to bottom, #ff3a4e, #ffffff);
+  background: linear-gradient(to bottom right, #ff3a4e,#954ae7);
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  
 }
 
 .navbar {

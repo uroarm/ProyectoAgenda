@@ -19,13 +19,14 @@ function Navbar() {
                     </Link>
                         
                         <ContainerNav>
-                        <IconButton>
-                            <FiCalendar size="2em" color= "white"/>
-                        </IconButton>
-                        <WiCloudy size="4em" color="white"/>
+                        <WiCloudy size="3em" color="white"/>
                         <div>Monday</div>
                         <div>13/01/2021</div>
                         </ContainerNav>
+
+                        <IconButton>
+                            <FiCalendar size="2em" color= "white"/>
+                        </IconButton>
                     </Section>
            
                     
