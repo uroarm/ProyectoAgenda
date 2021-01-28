@@ -15,6 +15,7 @@ import EventAvailableIcon from '@material-ui/icons/EventAvailable';
 import EventBusyIcon from '@material-ui/icons/EventBusy';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+import { createMuiTheme } from '@material-ui/core';
 
 function LandingPage() {
 
@@ -31,6 +32,11 @@ function LandingPage() {
         
     }, [])
 
+    const theme = createMuiTheme({
+        overrides: {
+            size: '5px',
+        },
+    });
 
     return (           
         <div class="divd">
@@ -39,7 +45,6 @@ function LandingPage() {
 
             <div className="phrase">
                 <h1>"La Aplicacion para llevar el tiempo de tu vida..."</h1>
-                <h3 className="subtitle">Duis a gravida neque. Praesent a dolor eu mauris.</h3>
             </div>
 
             <div class="custom-shape-divider">
@@ -47,30 +52,30 @@ function LandingPage() {
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
                 </svg>
 
-                <h1>"Todo lo necesario a la palma de tu mano"</h1>
+                <h1>Todo lo necesario a la palma de tu mano</h1>
                 <Grid container className="grids" spacing={8}>
-                    <Grid item xs={4}>
-                        <FaCalendarAlt/>
-                        <p>Calendarizacion de todas tus actividades</p>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons2"><FaCalendarAlt /></a>
+                        <p>Calendarización de todas tus actividades</p>
                     </Grid>
-                    <Grid item xs={4}>
-                        <EventIcon/>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons"><EventIcon /></a>
                         <p>Checar tus actividades personalizadas</p>
                     </Grid>
-                    <Grid item xs={4}>
-                        <EventAvailableIcon/>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons"><EventAvailableIcon /></a>
                         <p>Crear actividades a tu gusto</p>
                     </Grid>
-                    <Grid item xs={4}>
-                        <EventBusyIcon/>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons"><EventBusyIcon/></a>
                         <p>Elimina actividades que no necesites</p>
                     </Grid>
-                    <Grid item xs={4}>
-                        <EventNoteIcon/>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons"><EventNoteIcon/></a>
                         <p>Registra tus actividades</p>
                     </Grid>
-                    <Grid item xs={4}>
-                        <AccessAlarmIcon/>
+                    <Grid item xs={4} className="borderGrids">
+                        <a className="sizeOfIcons"><AccessAlarmIcon /></a>
                         <p>Organiza tus tiempos</p>
                     </Grid>
                 </Grid>
@@ -82,14 +87,17 @@ function LandingPage() {
             </div>
 
             <div className="review">
-                <MediaIcons />
-                <div className="login">
-                    <h2>Que esperas?, registrate ahora! </h2>
+                <div className="loginB">
+                    <h2>¿Qué esperas? ¡Regístrate ahora! </h2>
+                    <br></br>
                     <Link to="/Login">
                         <Button className="boton">
-                            Registro
+                            Sign Up
                         </Button>
                     </Link>
+                    <br></br>
+                    <br></br>
+                    <MediaIcons />
                 </div>
             </div>
         </div>

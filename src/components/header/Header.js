@@ -21,7 +21,7 @@ function Header (){
             <div className= "rightside">
                 <div className="login">
                     <Link to="/Login">
-                        <a>Login</a>
+                        <a>Log In</a>
                     </Link>
                 </div>
             </div>
