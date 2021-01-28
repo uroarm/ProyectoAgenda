@@ -4,8 +4,8 @@ section {
   align-items: center;
 }
 
-.icons {
-  width: 60px;
+.iconsSocial {
+  width: 80px;
   height: 80px;
   display: inline-block;
   border-radius: 10px;
@@ -22,7 +22,7 @@ section {
   overflow: hidden;
 }
 
-.icons:hover {
+.iconsSocial:hover {
   /*transform: translateY(-20px);*/
   transform: scale(2);
 }
