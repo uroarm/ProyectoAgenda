@@ -18,12 +18,12 @@
   margin-top: 80px;
   width: 100%;
   height: 900px;
-  background-color: #00bfff;
+  background-color: #c4b7db;
   color: white;
 }
 
 .custom-shape-divider-2 {
-  fill: #00bfff;
+  fill: #c4b7db;
 }
 
 .custom-shape-divider svg {
@@ -79,7 +79,7 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 2px 25px rgba(0, 191, 255, 0.5);
+  box-shadow: 0 2px 25px rgba(196, 183, 219, 1);
   backdrop-filter: blur(2px);
   transition: 0.5s;
   overflow: hidden;

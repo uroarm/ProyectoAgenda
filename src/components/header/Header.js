@@ -3,12 +3,18 @@ import "./Header.css";
 import {Link} from 'react-router-dom';
 
 function Header (){
+
+    const i = {
+    };
+
     return (
         <div className="header">
             <div className="leftside">
                 <div className="logo">
                     <Link to="/landing">
-                        <a>Time-App</a>
+                        <div className="effect">
+                            <span>TaskLive</span>
+                        </div>
                     </Link>
                 </div> 
             </div>
@@ -24,3 +30,9 @@ function Header (){
 }
 
 export default Header;
+
+/*
+                    <Link to="/landing">
+                        <a>TaskLive</a>
+                    </Link>
+*/

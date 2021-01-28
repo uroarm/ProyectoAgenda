@@ -7,12 +7,12 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #00bfff;
+  color: #c4b7db;
   font-size: 47px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(196, 183, 219, 1);
   backdrop-filter: blur(2px);
   transition: 0.5s;
   overflow: hidden;
