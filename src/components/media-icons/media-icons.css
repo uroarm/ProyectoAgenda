@@ -4,42 +4,6 @@ section {
   align-items: center;
 }
 
-ul {
-  position: relative;
-  display: flex;
-}
-
-ul li {
-  position: center;
-  list-style: none;
-  margin: 10px;
-}
-
-ul li a {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 2em;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-ul li a:hover {
-  transform: translateY(-20px);
-}
-
 .icons {
   width: 60px;
   height: 80px;

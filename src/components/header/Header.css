@@ -34,7 +34,7 @@
   max-height: 80px;
 }
 
-.header .rightside .login a {
+.header .rightside .login .loginBtn {
   position: relative;
   width: 200px;
   height: 80px;

@@ -48,7 +48,7 @@ function LandingPage() {
                 </svg>
 
                 <h1>"Todo lo necesario a la palma de tu mano"</h1>
-                <Grid container className="grids" spacing={3}>
+                <Grid container className="grids" spacing={8}>
                     <Grid item xs={4}>
                         <FaCalendarAlt/>
                         <p>Calendarizacion de todas tus actividades</p>
@@ -87,7 +87,7 @@ function LandingPage() {
                     <h2>Que esperas?, registrate ahora! </h2>
                     <Link to="/Login">
                         <Button className="boton">
-                            Login Now
+                            Registro
                         </Button>
                     </Link>
                 </div>
