@@ -16,15 +16,8 @@ import { Container,
     import {  withStyles  } from '@material-ui/core/styles';    
     
 
-function LoginForm({Login, error})  {
-
-    const [details, setDetails] = useState ( { email: "", password: ""} );
-
-    const submitHandler = e =>{
-        e.preventDefault();
-        Login(details);
-    }
-
+function LoginForm()  {
+   
     const ColorButton = withStyles((theme) => ({
         root: {
           color: theme.palette.getContrastText(purple[500]),
@@ -41,17 +34,15 @@ function LoginForm({Login, error})  {
             <Container>
                     
                     <FormContent>
-                        <Form onSubmit={submitHandler}>
+                        <Form>
                             <FormTitle>Login</FormTitle>
-                            {(error != "") ? (<div>datos incorretos!!</div>) : ""}
+                            
                             <FormLabel>Email</FormLabel>
                             <TextField label="Email" variant="outlined" color="primary" fullWidth
                             placeholder='ingresa correo' type="email" id="email" 
-                            onChange={e => setDetails({...details, email: e.target.value})} value={details.email}/>
+                            />
                              <FormLabel>Password</FormLabel>
-                            <TextField label="password" variant="outlined" color="#primary" fullWidth
-                            placeholder="ingresa contraseña"  type="password" id = "password"
-                            onChange={e => setDetails({...details, password: e.target.value})} value={details.password}/>
+                            <TextField label="password" variant="outlined" color="#primary" fullWidth />
                             <br></br>
                             <ColorButton type="submit" color="primary" variant="contained" fullWidth> Login</ColorButton>
                             <br></br>

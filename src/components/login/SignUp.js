@@ -13,16 +13,11 @@ import { green, purple } from '@material-ui/core/colors';
 import {  withStyles  } from '@material-ui/core/styles';   
 import Button from '@material-ui/core/Button';    
 import { Link } from 'react-router-dom';
-import validateInfo from './validateInfo'
-import useForm from './useForm';
 
-const SignUp = ({submitForm}) => {
 
-  const {handleChange, values, handleSubmit, errors} 
-  = useForm(submitForm,validateInfo);
+const SignUp = () => {
 
   
-   
     const ColorButton = withStyles((theme) => ({
         root: {
           color: theme.palette.getContrastText(purple[500]),
@@ -39,42 +34,34 @@ const SignUp = ({submitForm}) => {
 
           <Container>
               <FormContent>
-                  <Form onSubmit={handleSubmit}>
+                  <Form >
                   <FormTitle>Register</FormTitle>
                       <FormLabel>Name</FormLabel>
 
                       <TextField label="Name" variant="outlined" color="#9900ef" fullWidth 
                       type="text" id="username" name="username"
-                      placeHolder="username" 
-                      value={values.username}
-                      onChange={handleChange}/>
-                       {errors.username && <p>{errors.username}</p>}
+                      placeHolder="username"/>
+                     
 
                       <FormLabel>Email</FormLabel>
                       <TextField label="Email" variant="outlined" color="#9900ef" fullWidth
                       type="email" id="email" name="email"
-                      placeHolder="email" 
-                      value={values.email}
-                      onChange={handleChange}/>
-                        {errors.email && <p>{errors.email}</p>}
+                      placeHolder="email" />
+                      
                       <FormLabel>Password</FormLabel>
 
                       <TextField label="Password" variant="outlined" color="#9900ef" fullWidth 
                       type="password" id="password" name="password"
-                      placeHolder="password" 
-                      value={values.password}
-                      onChange={handleChange}/>
-                      {errors.password && <p>{errors.password}</p>}
+                      placeHolder="password" />
+                      
                       <FormLabel>Confirm Password</FormLabel> 
 
                       <TextField label="Confirm Password" variant="outlined" color="#9900ef" fullWidth
                       type="password" id="password2" name="password2"
-                      placeHolder="confirm password" 
-                      value={values.password2}
-                      onChange={handleChange}/>
-                      {errors.password2 && <p>{errors.password2}</p>}
+                      placeHolder="confirm password" />
+                      
                         <br></br>
-                        <ColorButton type='submit' >Sign Up</ColorButton>
+                        <ColorButton type="submit">Sign Up</ColorButton>
                         <br></br>
                         Already have an account? <Link to="/login">Sign in</Link>
                   </Form>
