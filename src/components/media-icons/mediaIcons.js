@@ -16,17 +16,17 @@ function mediaIcons (){
 
             <Grid item xs={2}>
                 <Link to="#">
-                    <a className="iconsSocial"><FacebookIcon /></a>
+                    <a className="mediaI"><FacebookIcon /></a>
                 </Link>
             </Grid>
             <Grid item xs={2}>
                 <Link to="#">
-                    <a className="iconsSocial"><TwitterIcon /></a>
+                    <a className="mediaI"><TwitterIcon /></a>
                 </Link>
             </Grid>
             <Grid item xs={2}>
                 <Link to="#">
-                    <a className="iconsSocial"><InstagramIcon /></a>
+                    <a className="mediaI"><InstagramIcon /></a>
                 </Link>
             </Grid>
         </Grid>
