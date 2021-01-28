@@ -66,6 +66,14 @@ function AEventCards (){
     setSelectedEvent(element);
     (eventcase ==='Editar')&&setEditar(true)
   }
+
+  const handleChange=e=>{
+      const {name, value}=e.target;
+      setSelectedEvent((prevState)=>({
+          ...prevState,
+          [name]: value
+      }))
+  }
     
   
     return (
@@ -78,7 +86,7 @@ function AEventCards (){
                     <Fab color ="secondary">
                         12   
                     </Fab>
-                    <Fab>
+                    <Fab color ="secondary">
                         12   
                     </Fab>
                 </Grid>
