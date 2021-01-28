@@ -13,6 +13,9 @@ import { green, purple } from '@material-ui/core/colors';
 import {  withStyles  } from '@material-ui/core/styles';   
 import Button from '@material-ui/core/Button';    
 import { Link } from 'react-router-dom';
+import validateInfo from './validateInfo'
+import useForm from './useForm';
+
 const SignUp = () => {
    
     const ColorButton = withStyles((theme) => ({
@@ -25,6 +28,8 @@ const SignUp = () => {
         },
       }))(Button);
 
+      const {handleChange, values, handleSubmit, errors} = useForm(validateInfo);
+
     return (
         <>
 
@@ -36,8 +41,10 @@ const SignUp = () => {
 
                       <TextField label="Name" variant="outlined" color="#9900ef" fullWidth 
                       type="text" id="username" name="username"
-                      placeHolder="username" />
-                       
+                      placeHolder="username" 
+                      value={values.username}
+                      onChange={handleChange}/>
+                       {errors.username && <p>{errors.username}</p>}
 
                       <FormLabel>Email</FormLabel>
                       <TextField label="Email" variant="outlined" color="#9900ef" fullWidth

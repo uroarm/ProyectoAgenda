@@ -51,30 +51,42 @@ function AEventCards (){
     const [data, setData] = useState(posts);
     const classes = useStyles();
      
-    const [editar, setEditar] = useState(false);
+    const [editEvent, setEditEvent] = useState(false);
 
-    const [deleted, setDeleted] = useState(false); 
+    const [deleteEvent, setDeleteEvent] = useState(false); 
 
-  const[selectedEvent, setSelectedEvent] = useState({
-      id: '',
-      hour: '',
-      title:'',
-      content:''
-  });
+    const[selectedEvent, setSelectedEvent] = useState({
+        id: '',
+        hour: '',
+        title:'',
+        content:''
+    });
 
   const selectEvent = (element, eventcase) => {
-    setSelectedEvent(element);
-    (eventcase ==='Editar')&&setEditar(true)
-  }
+        setSelectedEvent(element);
+        (eventcase ==='Editar')&&setEditEvent(true)
+    }
 
-  const handleChange=e=>{
-      const {name, value}=e.target;
-      setSelectedEvent((prevState)=>({
-          ...prevState,
-          [name]: value
-      }))
-  }
-    
+    const handleChange=e=>{
+        const {name, value}=e.target;
+        setSelectedEvent((prevState)=>({
+            ...prevState,
+            [name]: value
+        }))
+    }
+
+    const editar = () =>{
+        var newData = data;
+        newData.map((aevent)=>{
+            if(aevent.id === selectedEvent.id){
+                aevent.hour = selectedEvent.hour;
+                aevent.title = selectedEvent.title;
+                aevent.content = selectedEvent.content;
+            }
+        });
+        setData(newData);
+        setEditEvent(false);
+    }
   
     return (
         
