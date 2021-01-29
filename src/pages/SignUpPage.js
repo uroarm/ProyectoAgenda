@@ -86,7 +86,7 @@ class SignUpPage extends Component{
                     console.log(response);
                     localStorage.setItem("token",response.data.accessToken);
                     localStorage.setItem("name",response.data.user.name);
-                    this.props.history.push("/actualEvent");
+                    this.props.history.push("/Login");
                 }
             }).catch(error =>{
                 console.log(error);
