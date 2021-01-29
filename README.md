@@ -1,10 +1,12 @@
-# Setting up TaskLive-APP
+# TaskLive-APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projecto integrador de la materia Desarrollo de aplicaciones Web
 
-## Available Scripts
+## Integrantes del Equipo
 
-In the project directory, you can run:
+    Jose Manuel Patron 
+    Armando Valdivieso
+    Mauro Zapata
 
 ### `npm start`
 
