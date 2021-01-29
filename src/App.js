@@ -6,6 +6,7 @@ import LoginPage from './pages/LoginPage';
 import AddEventPage from './pages/AddEventPage.js';
 import ActualEventPage from './pages/ActualEventPage.js';
 import SignUpPage from './pages/SignUpPage';
+import TimerPage from './pages/TimerPage';
 function App() {
   return (
     
@@ -17,8 +18,9 @@ function App() {
                 <Route path="/addEvent" component ={AddEventPage} />
                 <Route path ='/actualEvent' component ={ActualEventPage} />
                 <Route path="/signUp" component ={SignUpPage}/>
+                <Route path="/timer" component ={TimerPage} />
                 </Switch>
-                <Redirect to="landing"/>
+                <Redirect to="/landing"/>
             </Router>
       
     </div>
