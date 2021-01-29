@@ -32,19 +32,17 @@
   padding-right: 8%;
 }
 
-.header .rightside .login {
+.header .rightside .loginb {
   max-height: 80px;
+  padding-top: 40px;
 }
 
-.header .rightside .login a {
-  position: relative;
+.header .rightside .loginb a {
   width: 200px;
-  height: 80px;
-  display: inline-block;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-decoration: none;
   color: black;
   font-size: 35px;

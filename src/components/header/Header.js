@@ -18,10 +18,11 @@ function Header (){
                     </Link>
                 </div> 
             </div>
+
             <div className= "rightside">
-                <div className="login">
+                <div className="loginb">
                     <Link to="/Login">
-                        <a>Login</a>
+                        <span>Login</span>
                     </Link>
                 </div>
             </div>
