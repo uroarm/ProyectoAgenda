@@ -3,7 +3,9 @@ import './TimerPage.css';
 import BreakInterval from '../components/timers/BreakInterval';
 import SessionLength from '../components/timers/SessionLength';
 import Timer from '../components/timers/Timer';
-
+import {Link} from 'react-router-dom';
+import {IconButton} from  '@material-ui/core';
+import {FiCalendar} from 'react-icons/fi';
 class TimerPage extends React.Component {
 
     constructor(){
@@ -94,8 +96,10 @@ class TimerPage extends React.Component {
 
     render(){
         return (
-            <div className="main">
-                <h2 className="titlePomodoro">Pomodoro Clock</h2>
+            <div className="main3">
+               <Link to="/actualEvent"> <IconButton className="iconret"><FiCalendar size="2em"/> Return to planner</IconButton></Link>
+               <br></br><br></br>
+                <h2 className="titlePomodoro">My Happy Timer</h2>
                 <section className="interval-lenght-container">
                     <BreakInterval isPlay={this.state.isPlay} breakInterval={this.state.breakLength}  increaseBreak={this.onIncreaseBreakLength} decreaseBreak={this.onDecreaseBreakLength} />
                     <SessionLength isPlay={this.state.isPlay} sessionLength={this.state.sessionLength} increaseSession={this.onIncreaseSessionLength} decreaseSession={this.onDecreaseSessionLength} />

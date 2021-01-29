@@ -19,8 +19,9 @@ function App() {
                 <Route path ='/actualEvent' component ={ActualEventPage} />
                 <Route path="/signUp" component ={SignUpPage}/>
                 <Route path="/timer" component ={TimerPage} />
+              
                 </Switch>
-                <Redirect to="/timer"/>
+                <Redirect to="/landing"/>
             </Router>
       
     </div>

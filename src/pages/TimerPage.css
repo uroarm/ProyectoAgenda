@@ -1,10 +1,17 @@
-.main {
+.main3 {
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  
+  background-color: rgb(255, 255, 255);
+  background-image: url("../images/timerback.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .titlePomodoro {
@@ -31,15 +38,18 @@
 }
 
 .timer-buttons {
-  background-color: #263646;
+  background-color: #3411ce;
   border: none;
   outline: none;
   cursor: pointer;
   color: #eee;
-  width: 60px;
-  border-radius: 2px;
+  align-items: center;
+  width: 70px;
+  margin: 10px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .interval-lenght {
@@ -53,10 +63,12 @@
   border: 2px solid #263646;
   margin-top: 40px;
   border-radius: 25px;
-  width: 250px;
+  width: auto;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .timer {
@@ -66,5 +78,12 @@
 .timer-actions {
   margin-top: 20px;
   text-align: center;
-  flex-direction: column;
+  flex-direction: row;
+ 
+}
+
+.iconret {
+  color: #3411ce;
+  height: 50px;
+  
 }

@@ -52,9 +52,7 @@ class ActualEventPage extends Component {
 
 
     state={
-      data:[{id: 5, hour: '16:00', title: 'Sleep', description: 'Lorem ipsum dolor sit amet Suspendisse sem urna'},
-    {id: 6, hour: '20:00', title: 'Cry', description: 'Lorem ipsum dolor sit amet Suspendisse sem urna'},
-    {id: 7, hour: '21:00', title: 'Wonder', description: 'Lorem ipsum dolor sit amet Suspendisse sem urna'}],
+      data:[],
       insertData: false,
       deleteData: false,
       updateData: false,
@@ -218,7 +216,7 @@ peticionDelete=()=>{
                     <br />
           <div className="form-group">
            
-            <label>Hour</label>
+           {/* <label>Hour</label>
             <input
               className="form-control"
               type="text"
@@ -226,8 +224,8 @@ peticionDelete=()=>{
               id="hour"
               value={form?form.hour: ''}
               onChange={this.handleChange}
-            />
-            <br />
+            /> 
+            <br /> */}
 
             <label>Title</label>
             <input

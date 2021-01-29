@@ -87,7 +87,7 @@ function LandingPage() {
                 <div className="login">
                     <h2>Que esperas?, registrate ahora! </h2>
                     <br/> <br/>
-                    <Link to="/Login">
+                    <Link to="/signUp">
                         <Button className="boton">
                             Registro
                         </Button>
