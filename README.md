@@ -30,3 +30,10 @@ dependencies:
     react-dom": "^17.0.1
     react-router-dom": "^5.2.0
     styled-components": "^5.2.1
+
+# Para probar 
+Debido a que se ejecutan peticiones del tipo POST,PUT,GET,DELETE es necesario habilitar la siguiente extension en chrome:
+    
+    https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=es
+
+Se encarga de permitir el Access-Control-Allow-Origin que tienen los navegadores
