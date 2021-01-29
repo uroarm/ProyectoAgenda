@@ -26,6 +26,7 @@ import axios from'axios';
 class LoginPage extends Component {
 
     
+    
     constructor(props){
         super(props);
     }
@@ -118,7 +119,7 @@ class LoginPage extends Component {
                             placeholder='ingresa correo' type="email" id="email" onChange = {this.handlerChange}
                             />
                              <FormLabel>Password</FormLabel>
-                            <TextField label="password" variant="outlined" id="password" color="#primary" fullWidth  onChange = {this.handlerChange}/>
+                            <TextField label="password" type= "password" variant="outlined" id="password" color="#primary" fullWidth  onChange = {this.handlerChange}/>
                             <br></br>
                             <this.ColorButton type="submit" color="primary" variant="contained" fullWidth onClick ={this.buttonHandler}> Login </this.ColorButton>
                             <br></br>

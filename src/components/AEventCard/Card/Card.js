@@ -46,49 +46,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function AEventCards (){
   
-    //togle de botones
   
-    //content de las horas y eventos
-    const [data, setData] = useState(posts);
-    const classes = useStyles();    
-    const [editEvent, setEditEvent] = useState(false);
-    const [deleteEvent, setDeleteEvent] = useState(false);
-    const[selectedEvent, setSelectedEvent] = useState({
-        id: '',
-        hour: '',
-        title:'',
-        content:''
-    });
-    const selectEvent = (element, eventcase) =>{
-        setSelectedEvent(element);
-        (eventcase ==='Edit')?setEditEvent(true):setDeleteEvent(true)
-    }
-    const handleChange=e=>{
-        const {name, value}=e.target;
-        setSelectedEvent((prevState)=>({
-            ...prevState,
-            [name]: value
-        }))
-    }
-
-    const edit = () =>{
-        var newData = data;
-        newData.map((aevent)=>{
-            if(aevent.id === selectedEvent.id){
-                aevent.hour = selectedEvent.hour;
-                aevent.title = selectedEvent.title;
-                aevent.content = selectedEvent.content;
-            }
-        });
-        setData(newData);
-        setEditEvent(false);
-    }
-
-    const delet =()=>{
-        setData(data.filter(aevent=>aevent.id!==selectedEvent.id));
-        setDeleteEvent(false);
-    }
-
     
 
     return (   
