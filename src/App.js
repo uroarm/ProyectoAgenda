@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
                 <Switch>
-                <Route path="/login" component={LoginPage} />
+                <Route path="/Login" exact render ={ props => (<LoginPage {...props}/>)} />
                 <Route path= "/landing" component={LandingPage} />
                 <Route path="/addEvent" component ={AddEventPage} />
                 <Route path ='/actualEvent' component ={ActualEventPage} />
