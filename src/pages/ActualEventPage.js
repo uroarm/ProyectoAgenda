@@ -97,14 +97,14 @@ peticionPost=async()=>{
 }
 
 peticionPut=()=>{
-  axios.put(url+this.state.form.id, this.state.form).then(response=>{
+  axios.put(url+"/"+this.state.form.id, this.state.form, {headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer '+ token}}).then(response=>{
     this.insertData();
     this.peticionGet();
   })
 }
 
 peticionDelete=()=>{
-  axios.delete(url+this.state.form.id).then(response=>{
+  axios.delete(url+"/"+this.state.form.id, {headers:{'Content-Type': 'application/json', 'Authorization': 'Bearer '+ token}}).then(response=>{
     this.setState({deleteData: false});
     this.peticionGet();
   })
@@ -276,7 +276,7 @@ peticionDelete=()=>{
           Do you want delete {form && form.title}
         </ModalBody>
         <ModalFooter>
-          <button className="btn btn-danger">
+          <button className="btn btn-danger" onClick={()=>this.peticionDelete()}>
             Yes
           </button>
           <button

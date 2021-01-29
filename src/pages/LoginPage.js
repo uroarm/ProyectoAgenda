@@ -89,6 +89,7 @@ class LoginPage extends Component {
 
             }else{
                 console.log(response);
+                console.log(response.data.accessToken);
                 localStorage.setItem("token",response.data.accessToken);
                 localStorage.setItem("name",response.data.user.name);
                 this.props.history.push("/actualEvent");
