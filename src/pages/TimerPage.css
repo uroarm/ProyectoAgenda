@@ -1,0 +1,89 @@
+.main3 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  background-image: url("../images/timerback.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.titlePomodoro {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.titleLength {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.interval-container {
+  display: flex;
+  margin: 0 40px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.interval-lenght-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-buttons {
+  background-color: #3411ce;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #eee;
+  align-items: center;
+  width: 70px;
+  margin: 10px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.interval-lenght {
+  font-size: 2rem;
+  margin: 0 10px;
+  
+  
+}
+
+.timer-container {
+  border: 2px solid #263646;
+  margin-top: 40px;
+  border-radius: 25px;
+  width: auto;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer {
+  font-size: 2rem;
+}
+
+.timer-actions {
+  margin-top: 20px;
+  text-align: center;
+  flex-direction: row;
+ 
+}
+
+.iconret {
+  color: #3411ce;
+  height: 50px;
+  
+}
